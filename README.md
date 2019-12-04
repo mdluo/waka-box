@@ -22,7 +22,7 @@
 1. Fork this repo
 1. Edit the [environment variable](https://github.com/matchai/waka-box/blob/master/.github/workflows/schedule.yml#L13-L15) in `.github/workflows/schedule.yml`:
 
-   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/mdluo/`**`52dd4f5451eaaac7abb993be344b1292`**.
+   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/mdluo/`**`2149da695c8eee57a662ad32fce4d1d0`**.
 
 1. Go to the repo **Settings > Secrets**
 1. Add the following environment variables:
