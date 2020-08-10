@@ -40,6 +40,8 @@ async function updateGist(stats) {
     lines.push(line.join(" "));
   }
 
+  if (lines.length == 0) return;
+
   try {
     // Get original filename to update that same file
     const filename = Object.keys(gist.data.files)[0];
@@ -67,10 +69,9 @@ function generateBarChart(percent, size) {
   }
   const semi = frac % 8;
 
-  return [
-    syms.substring(8, 9).repeat(barsFull),
-    syms.substring(semi, semi + 1),
-  ].join("").padEnd(size, syms.substring(0, 1));
+  return [syms.substring(8, 9).repeat(barsFull), syms.substring(semi, semi + 1)]
+    .join("")
+    .padEnd(size, syms.substring(0, 1));
 }
 
 (async () => {
